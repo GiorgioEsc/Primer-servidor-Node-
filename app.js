@@ -31,8 +31,8 @@ app.post('/imagen',upload.single('imagen'), async function (req, res){
     res.send({resizedImageBuffer})
 })
 
-const port = process.env.port || 3000
-app.listen(port, function(){
-    console.log("Servidor escuchando en el puerto", port)
+const PORT = process.env.port || 3000
+app.listen(PORT, function(){
+    console.log("Servidor escuchando en el puerto", PORT)
 })
 
